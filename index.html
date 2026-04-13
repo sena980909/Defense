@@ -1110,22 +1110,27 @@ const AudioCtx = window.AudioContext || window.webkitAudioContext;
 let audioCtx = null;
 
 // ===== BGM =====
-const bgm = new Audio('TowerDefense.mp3');
-bgm.loop = true;
-bgm.volume = 0.35;
+let bgm = null;
 let bgmPlaying = false;
+try {
+  bgm = new Audio('TowerDefense.mp3');
+  bgm.loop = true;
+  bgm.volume = 0.35;
+} catch(e) { /* BGM 로드 실패 무시 */ }
 
 function toggleBgm() {
+  if (!bgm) return;
   if (bgmPlaying) {
     bgm.pause();
     bgmPlaying = false;
     document.getElementById('bgm-btn').textContent = 'BGM OFF';
     document.getElementById('bgm-btn').classList.remove('active');
   } else {
-    bgm.play().catch(() => {});
-    bgmPlaying = true;
-    document.getElementById('bgm-btn').textContent = 'BGM ON';
-    document.getElementById('bgm-btn').classList.add('active');
+    bgm.play().then(() => {
+      bgmPlaying = true;
+      document.getElementById('bgm-btn').textContent = 'BGM ON';
+      document.getElementById('bgm-btn').classList.add('active');
+    }).catch(() => {});
   }
 }
 
@@ -1875,7 +1880,7 @@ function showEndStats() {
 }
 
 function fadeBgm() {
-  if (!bgmPlaying) return;
+  if (!bgmPlaying || !bgm) return;
   const fadeStep = () => {
     if (bgm.volume > 0.05) {
       bgm.volume = Math.max(0, bgm.volume - 0.02);
