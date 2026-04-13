@@ -14,13 +14,13 @@
   "difficulty": {
     "enemyHpScale": [
       { "waveRange": [1, 5], "multiplier": 1.0 },
-      { "waveRange": [6, 10], "multiplier": 1.3 },
-      { "waveRange": [11, 15], "multiplier": 1.7 },
-      { "waveRange": [16, 20], "multiplier": 2.2 },
-      { "waveRange": [21, 25], "multiplier": 2.6 },
-      { "waveRange": [26, 30], "multiplier": 3.1 },
-      { "waveRange": [31, 35], "multiplier": 4.0 },
-      { "waveRange": [36, 40], "multiplier": 5.5 }
+      { "waveRange": [6, 10], "multiplier": 1.5 },
+      { "waveRange": [11, 15], "multiplier": 2.2 },
+      { "waveRange": [16, 20], "multiplier": 3.2 },
+      { "waveRange": [21, 25], "multiplier": 4.5 },
+      { "waveRange": [26, 30], "multiplier": 6.5 },
+      { "waveRange": [31, 35], "multiplier": 9.0 },
+      { "waveRange": [36, 40], "multiplier": 13.0 }
     ],
     "enemySpeedScale": [
       { "waveRange": [1, 5], "multiplier": 1.0 },
