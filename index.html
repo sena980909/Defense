@@ -698,7 +698,7 @@
         <button class="speed-btn" data-speed="2">x2</button>
         <button class="speed-btn" data-speed="3">x3</button>
       </div>
-      <button class="speed-btn" id="bgm-btn" title="BGM ON/OFF">BGM OFF</button>
+      <button class="speed-btn active" id="bgm-btn" title="BGM ON/OFF">BGM ON</button>
     </div>
 
     <!-- 게임 캔버스 -->
@@ -1131,10 +1131,6 @@ function toggleBgm() {
 
 function initAudio() {
   if (!audioCtx) audioCtx = new AudioCtx();
-  // 첫 사용자 상호작용 시 BGM 자동 시작
-  if (!bgmPlaying) {
-    toggleBgm();
-  }
 }
 
 function playSound(type) {
@@ -2610,6 +2606,19 @@ document.getElementById('wave-btn').addEventListener('click', () => {
 });
 
 // ===== 초기화 =====
+// 첫 사용자 상호작용 시 BGM 자동 시작 (브라우저 autoplay 정책 대응)
+function startBgmOnInteraction() {
+  if (!bgmPlaying) {
+    toggleBgm();
+  }
+  document.removeEventListener('click', startBgmOnInteraction);
+  document.removeEventListener('touchstart', startBgmOnInteraction);
+  document.removeEventListener('keydown', startBgmOnInteraction);
+}
+document.addEventListener('click', startBgmOnInteraction);
+document.addEventListener('touchstart', startBgmOnInteraction);
+document.addEventListener('keydown', startBgmOnInteraction);
+
 updateUI();
 requestAnimationFrame(gameLoop);
 </script>
