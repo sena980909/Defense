@@ -4,7 +4,7 @@
       "id": "basic",
       "name": "기본 타워",
       "description": "균형 잡힌 기본 공격 타워",
-      "cost": 120,
+      "cost": 70,
       "sellRatio": 0.6,
       "color": "#4CAF50",
       "levels": [
@@ -41,7 +41,7 @@
       "id": "sniper",
       "name": "스나이퍼 타워",
       "description": "긴 사거리, 높은 단일 데미지",
-      "cost": 250,
+      "cost": 150,
       "sellRatio": 0.6,
       "color": "#F44336",
       "levels": [
@@ -78,7 +78,7 @@
       "id": "splash",
       "name": "스플래시 타워",
       "description": "범위 공격으로 다수의 적에게 피해",
-      "cost": 220,
+      "cost": 130,
       "sellRatio": 0.6,
       "color": "#FF9800",
       "levels": [
@@ -121,7 +121,7 @@
       "id": "slow",
       "name": "슬로우 타워",
       "description": "적의 이동 속도를 감소시킴",
-      "cost": 200,
+      "cost": 120,
       "sellRatio": 0.6,
       "color": "#2196F3",
       "levels": [
@@ -167,7 +167,7 @@
       "id": "poison",
       "name": "독 타워",
       "description": "독을 발라 지속 데미지를 입힘",
-      "cost": 220,
+      "cost": 130,
       "sellRatio": 0.6,
       "color": "#66BB6A",
       "levels": [
@@ -182,7 +182,7 @@
       "id": "laser",
       "name": "레이저 타워",
       "description": "연속 레이저 빔으로 적을 태움",
-      "cost": 500,
+      "cost": 300,
       "sellRatio": 0.6,
       "color": "#E040FB",
       "levels": [
