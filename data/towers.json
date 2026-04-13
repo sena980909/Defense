@@ -1,0 +1,197 @@
+{
+  "towers": [
+    {
+      "id": "basic",
+      "name": "기본 타워",
+      "description": "균형 잡힌 기본 공격 타워",
+      "cost": 50,
+      "sellRatio": 0.6,
+      "color": "#4CAF50",
+      "levels": [
+        {
+          "level": 1,
+          "damage": 10,
+          "range": 100,
+          "fireRate": 1.0,
+          "upgradeCost": 35
+        },
+        {
+          "level": 2,
+          "damage": 18,
+          "range": 115,
+          "fireRate": 1.1,
+          "upgradeCost": 60
+        },
+        {
+          "level": 3,
+          "damage": 30,
+          "range": 130,
+          "fireRate": 1.3,
+          "upgradeCost": null
+        }
+      ],
+      "projectile": {
+        "speed": 400,
+        "color": "#81C784",
+        "size": 3
+      },
+      "special": null
+    },
+    {
+      "id": "sniper",
+      "name": "스나이퍼 타워",
+      "description": "긴 사거리, 높은 단일 데미지",
+      "cost": 100,
+      "sellRatio": 0.6,
+      "color": "#F44336",
+      "levels": [
+        {
+          "level": 1,
+          "damage": 40,
+          "range": 200,
+          "fireRate": 0.4,
+          "upgradeCost": 70
+        },
+        {
+          "level": 2,
+          "damage": 70,
+          "range": 230,
+          "fireRate": 0.5,
+          "upgradeCost": 120
+        },
+        {
+          "level": 3,
+          "damage": 120,
+          "range": 260,
+          "fireRate": 0.6,
+          "upgradeCost": null
+        }
+      ],
+      "projectile": {
+        "speed": 800,
+        "color": "#EF5350",
+        "size": 2
+      },
+      "special": { "type": "armorBreak", "description": "중장갑/보스에게 50% 추가 피해" }
+    },
+    {
+      "id": "splash",
+      "name": "스플래시 타워",
+      "description": "범위 공격으로 다수의 적에게 피해",
+      "cost": 90,
+      "sellRatio": 0.6,
+      "color": "#FF9800",
+      "levels": [
+        {
+          "level": 1,
+          "damage": 22,
+          "range": 90,
+          "fireRate": 0.8,
+          "splashRadius": 55,
+          "upgradeCost": 65
+        },
+        {
+          "level": 2,
+          "damage": 35,
+          "range": 100,
+          "fireRate": 0.9,
+          "splashRadius": 65,
+          "upgradeCost": 110
+        },
+        {
+          "level": 3,
+          "damage": 55,
+          "range": 110,
+          "fireRate": 1.0,
+          "splashRadius": 80,
+          "upgradeCost": null
+        }
+      ],
+      "projectile": {
+        "speed": 300,
+        "color": "#FFB74D",
+        "size": 5
+      },
+      "special": {
+        "type": "splash",
+        "description": "착탄 시 주변 적에게 피해"
+      }
+    },
+    {
+      "id": "slow",
+      "name": "슬로우 타워",
+      "description": "적의 이동 속도를 감소시킴",
+      "cost": 80,
+      "sellRatio": 0.6,
+      "color": "#2196F3",
+      "levels": [
+        {
+          "level": 1,
+          "damage": 5,
+          "range": 100,
+          "fireRate": 1.5,
+          "slowAmount": 0.3,
+          "slowDuration": 2.0,
+          "upgradeCost": 55
+        },
+        {
+          "level": 2,
+          "damage": 10,
+          "range": 115,
+          "fireRate": 1.7,
+          "slowAmount": 0.4,
+          "slowDuration": 2.5,
+          "upgradeCost": 95
+        },
+        {
+          "level": 3,
+          "damage": 18,
+          "range": 130,
+          "fireRate": 2.0,
+          "slowAmount": 0.5,
+          "slowDuration": 3.0,
+          "upgradeCost": null
+        }
+      ],
+      "projectile": {
+        "speed": 350,
+        "color": "#64B5F6",
+        "size": 4
+      },
+      "special": {
+        "type": "slow",
+        "description": "적 이동속도 감소"
+      }
+    },
+    {
+      "id": "poison",
+      "name": "독 타워",
+      "description": "독을 발라 지속 데미지를 입힘",
+      "cost": 90,
+      "sellRatio": 0.6,
+      "color": "#66BB6A",
+      "levels": [
+        { "level": 1, "damage": 3, "range": 90, "fireRate": 1.2, "poisonDps": 12, "poisonDuration": 3.0, "poisonSlow": 0.1, "upgradeCost": 65 },
+        { "level": 2, "damage": 5, "range": 100, "fireRate": 1.4, "poisonDps": 20, "poisonDuration": 3.5, "poisonSlow": 0.15, "upgradeCost": 110 },
+        { "level": 3, "damage": 8, "range": 110, "fireRate": 1.6, "poisonDps": 30, "poisonDuration": 4.0, "poisonSlow": 0.2, "upgradeCost": null }
+      ],
+      "projectile": { "speed": 300, "color": "#A5D6A7", "size": 4 },
+      "special": { "type": "poison", "description": "지속 독 데미지 + 감속" }
+    },
+    {
+      "id": "laser",
+      "name": "레이저 타워",
+      "description": "연속 레이저 빔으로 적을 태움",
+      "cost": 200,
+      "sellRatio": 0.6,
+      "color": "#E040FB",
+      "levels": [
+        { "level": 1, "damage": 18, "range": 110, "fireRate": 2.5, "upgradeCost": 130 },
+        { "level": 2, "damage": 28, "range": 125, "fireRate": 3.0, "upgradeCost": 200 },
+        { "level": 3, "damage": 42, "range": 140, "fireRate": 3.5, "upgradeCost": null }
+      ],
+      "projectile": { "speed": 9999, "color": "#EA80FC", "size": 2 },
+      "special": { "type": "laser", "description": "즉발 레이저 빔" }
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "game": {
+    "title": "타워 디펜스",
+    "version": "1.0.0",
+    "canvasWidth": 750,
+    "canvasHeight": 500,
+    "fps": 60
+  },
+  "player": {
+    "startGold": 200,
+    "startHp": 20,
+    "maxHp": 20
+  },
+  "difficulty": {
+    "enemyHpScale": [
+      { "waveRange": [1, 5], "multiplier": 1.0 },
+      { "waveRange": [6, 10], "multiplier": 1.3 },
+      { "waveRange": [11, 15], "multiplier": 1.7 },
+      { "waveRange": [16, 20], "multiplier": 2.2 }
+    ],
+    "enemySpeedScale": [
+      { "waveRange": [1, 5], "multiplier": 1.0 },
+      { "waveRange": [6, 10], "multiplier": 1.1 },
+      { "waveRange": [11, 15], "multiplier": 1.2 },
+      { "waveRange": [16, 20], "multiplier": 1.3 }
+    ]
+  },
+  "ui": {
+    "colors": {
+      "background": "#1a1a2e",
+      "gridLine": "#16213e",
+      "pathColor": "#e2c275",
+      "emptyTile": "#0f3460",
+      "blockedTile": "#1a1a2e",
+      "selectedHighlight": "rgba(255, 255, 255, 0.3)",
+      "rangeIndicator": "rgba(255, 255, 255, 0.1)",
+      "healthBarBg": "#333333",
+      "healthBarFill": "#4CAF50",
+      "healthBarLow": "#F44336",
+      "textPrimary": "#ffffff",
+      "textGold": "#FFD700",
+      "textDanger": "#FF4444",
+      "panelBg": "#16213e",
+      "buttonBg": "#0f3460",
+      "buttonHover": "#1a5276",
+      "buttonDisabled": "#555555"
+    },
+    "fonts": {
+      "primary": "14px 'Segoe UI', sans-serif",
+      "title": "bold 18px 'Segoe UI', sans-serif",
+      "small": "11px 'Segoe UI', sans-serif",
+      "large": "bold 24px 'Segoe UI', sans-serif"
+    }
+  },
+  "audio": {
+    "enabled": false,
+    "volume": 0.5
+  }
+}

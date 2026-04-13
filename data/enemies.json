@@ -1,0 +1,83 @@
+{
+  "enemies": [
+    {
+      "id": "normal",
+      "name": "일반병",
+      "description": "기본 보병 유닛",
+      "hp": 30,
+      "speed": 60,
+      "reward": 10,
+      "damage": 1,
+      "color": "#E57373",
+      "size": 8
+    },
+    {
+      "id": "fast",
+      "name": "정찰병",
+      "description": "빠른 이동속도의 경장갑 유닛",
+      "hp": 20,
+      "speed": 120,
+      "reward": 15,
+      "damage": 1,
+      "color": "#CE93D8",
+      "size": 6
+    },
+    {
+      "id": "heavy",
+      "name": "중장갑",
+      "description": "느리지만 체력이 높은 유닛",
+      "hp": 100,
+      "speed": 35,
+      "reward": 25,
+      "damage": 2,
+      "color": "#A1887F",
+      "size": 12
+    },
+    {
+      "id": "swarm",
+      "name": "돌격병",
+      "description": "약하지만 대량으로 출현하는 유닛",
+      "hp": 15,
+      "speed": 70,
+      "reward": 5,
+      "damage": 1,
+      "color": "#FFF176",
+      "size": 5
+    },
+    {
+      "id": "healer",
+      "name": "치유병",
+      "description": "주변 아군의 HP를 회복시키는 유닛",
+      "hp": 40,
+      "speed": 50,
+      "reward": 20,
+      "damage": 1,
+      "color": "#69F0AE",
+      "size": 9,
+      "special": "heal"
+    },
+    {
+      "id": "splitter",
+      "name": "분열체",
+      "description": "처치 시 2마리의 돌격병으로 분열",
+      "hp": 60,
+      "speed": 55,
+      "reward": 15,
+      "damage": 1,
+      "color": "#B388FF",
+      "size": 10,
+      "special": "split"
+    },
+    {
+      "id": "boss",
+      "name": "보스",
+      "description": "매우 강력한 보스 유닛",
+      "hp": 500,
+      "speed": 30,
+      "reward": 100,
+      "damage": 5,
+      "color": "#FF1744",
+      "size": 18
+    }
+  ]
+}
