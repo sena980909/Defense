@@ -467,10 +467,15 @@
 
   /* 웨이브 진행 바 */
   #wave-progress {
-    display: none;
+    display: flex;
     align-items: center;
     gap: 8px;
     font-size: 12px;
+    visibility: hidden;
+  }
+
+  #wave-progress.active {
+    visibility: visible;
   }
 
   #wave-progress .bar-wrap {
@@ -689,7 +694,7 @@
         <span>기지 HP</span>
         <span class="stat-value hp" id="hp-display">20 / 20</span>
       </div>
-      <div id="wave-progress" style="display:none;">
+      <div id="wave-progress">
         <span id="enemies-left">0</span>
         <div class="bar-wrap"><div class="bar-fill" id="wave-bar" style="width:100%"></div></div>
       </div>
@@ -1827,7 +1832,7 @@ function startWave() {
   gameState.currentWave++;
   document.getElementById('wave-btn').textContent = `웨이브 ${gameState.currentWave} 진행중...`;
   document.getElementById('wave-btn').classList.add('running');
-  document.getElementById('wave-progress').style.display = 'flex';
+  document.getElementById('wave-progress').classList.add('active');
   playSound('wave');
   updateUI();
 }
@@ -1858,7 +1863,7 @@ function checkWaveClear() {
     gameState.phase = 'prepare';
     document.getElementById('wave-btn').textContent = '웨이브 시작';
     document.getElementById('wave-btn').classList.remove('running');
-    document.getElementById('wave-progress').style.display = 'none';
+    document.getElementById('wave-progress').classList.remove('active');
     updateUI();
   }
 }
@@ -1902,7 +1907,7 @@ function checkGameOver() {
     document.getElementById('overlay-title').textContent = 'GAME OVER';
     document.getElementById('overlay-title').className = 'defeat';
     document.getElementById('overlay-sub').textContent = `웨이브 ${gameState.currentWave}에서 패배했습니다`;
-    document.getElementById('wave-progress').style.display = 'none';
+    document.getElementById('wave-progress').classList.remove('active');
     showEndStats();
     document.getElementById('overlay').classList.add('show');
     fadeBgm();
