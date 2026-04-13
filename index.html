@@ -682,7 +682,7 @@
       <div class="top-stat">
         <div class="stat-icon wave">W</div>
         <span>웨이브</span>
-        <span class="stat-value" id="wave-display">0 / 20</span>
+        <span class="stat-value" id="wave-display">0 / 40</span>
       </div>
       <div class="top-stat">
         <div class="stat-icon gold">G</div>
@@ -1042,14 +1042,38 @@ const WAVE_DATA = [
   { "wave":17,"clearBonus":170,"groups":[{"enemyId":"heavy","count":10,"spawnInterval":1.0},{"enemyId":"fast","count":15,"spawnInterval":0.3},{"enemyId":"splitter","count":8,"spawnInterval":0.8}]},
   { "wave":18,"clearBonus":180,"groups":[{"enemyId":"normal","count":15,"spawnInterval":0.4},{"enemyId":"swarm","count":25,"spawnInterval":0.15},{"enemyId":"healer","count":5,"spawnInterval":1.0},{"enemyId":"heavy","count":8,"spawnInterval":1.0}]},
   { "wave":19,"clearBonus":190,"groups":[{"enemyId":"fast","count":20,"spawnInterval":0.25},{"enemyId":"splitter","count":10,"spawnInterval":0.6},{"enemyId":"heavy","count":10,"spawnInterval":0.8},{"enemyId":"healer","count":4,"spawnInterval":1.5}]},
-  { "wave":20,"clearBonus":300,"groups":[{"enemyId":"heavy","count":12,"spawnInterval":0.8},{"enemyId":"splitter","count":8,"spawnInterval":0.7},{"enemyId":"fast","count":15,"spawnInterval":0.3},{"enemyId":"healer","count":5,"spawnInterval":1.2},{"enemyId":"swarm","count":25,"spawnInterval":0.15},{"enemyId":"boss","count":3,"spawnInterval":4.0}]}
+  { "wave":20,"clearBonus":300,"groups":[{"enemyId":"heavy","count":12,"spawnInterval":0.8},{"enemyId":"splitter","count":8,"spawnInterval":0.7},{"enemyId":"fast","count":15,"spawnInterval":0.3},{"enemyId":"healer","count":5,"spawnInterval":1.2},{"enemyId":"swarm","count":25,"spawnInterval":0.15},{"enemyId":"boss","count":3,"spawnInterval":4.0}]},
+  // === 21~25: 고급 조합 ===
+  { "wave":21,"clearBonus":200,"groups":[{"enemyId":"fast","count":25,"spawnInterval":0.2},{"enemyId":"healer","count":4,"spawnInterval":1.5},{"enemyId":"splitter","count":6,"spawnInterval":1.0}]},
+  { "wave":22,"clearBonus":210,"groups":[{"enemyId":"heavy","count":15,"spawnInterval":0.8},{"enemyId":"swarm","count":30,"spawnInterval":0.12},{"enemyId":"healer","count":5,"spawnInterval":1.2}]},
+  { "wave":23,"clearBonus":220,"groups":[{"enemyId":"splitter","count":12,"spawnInterval":0.6},{"enemyId":"fast","count":20,"spawnInterval":0.25},{"enemyId":"heavy","count":8,"spawnInterval":1.0}]},
+  { "wave":24,"clearBonus":230,"groups":[{"enemyId":"normal","count":20,"spawnInterval":0.3},{"enemyId":"heavy","count":12,"spawnInterval":0.8},{"enemyId":"healer","count":6,"spawnInterval":1.0},{"enemyId":"splitter","count":8,"spawnInterval":0.7}]},
+  { "wave":25,"clearBonus":350,"groups":[{"enemyId":"boss","count":3,"spawnInterval":3.0},{"enemyId":"heavy","count":15,"spawnInterval":0.7},{"enemyId":"healer","count":6,"spawnInterval":1.0},{"enemyId":"fast","count":20,"spawnInterval":0.2}]},
+  // === 26~30: 극한 러시 ===
+  { "wave":26,"clearBonus":250,"groups":[{"enemyId":"swarm","count":50,"spawnInterval":0.1},{"enemyId":"fast","count":15,"spawnInterval":0.3},{"enemyId":"splitter","count":10,"spawnInterval":0.5}]},
+  { "wave":27,"clearBonus":260,"groups":[{"enemyId":"heavy","count":18,"spawnInterval":0.7},{"enemyId":"healer","count":8,"spawnInterval":0.8},{"enemyId":"fast","count":20,"spawnInterval":0.2}]},
+  { "wave":28,"clearBonus":270,"groups":[{"enemyId":"splitter","count":15,"spawnInterval":0.5},{"enemyId":"swarm","count":35,"spawnInterval":0.1},{"enemyId":"heavy","count":10,"spawnInterval":0.8},{"enemyId":"healer","count":6,"spawnInterval":1.0}]},
+  { "wave":29,"clearBonus":280,"groups":[{"enemyId":"fast","count":30,"spawnInterval":0.15},{"enemyId":"heavy","count":15,"spawnInterval":0.6},{"enemyId":"splitter","count":12,"spawnInterval":0.5},{"enemyId":"healer","count":8,"spawnInterval":0.8}]},
+  { "wave":30,"clearBonus":500,"groups":[{"enemyId":"boss","count":5,"spawnInterval":3.0},{"enemyId":"heavy","count":20,"spawnInterval":0.5},{"enemyId":"healer","count":8,"spawnInterval":0.8},{"enemyId":"splitter","count":10,"spawnInterval":0.6},{"enemyId":"swarm","count":30,"spawnInterval":0.1}]},
+  // === 31~35: 지옥 난이도 ===
+  { "wave":31,"clearBonus":300,"groups":[{"enemyId":"fast","count":35,"spawnInterval":0.12},{"enemyId":"splitter","count":15,"spawnInterval":0.4},{"enemyId":"healer","count":6,"spawnInterval":1.0}]},
+  { "wave":32,"clearBonus":310,"groups":[{"enemyId":"heavy","count":25,"spawnInterval":0.5},{"enemyId":"healer","count":10,"spawnInterval":0.6},{"enemyId":"swarm","count":40,"spawnInterval":0.08}]},
+  { "wave":33,"clearBonus":320,"groups":[{"enemyId":"splitter","count":20,"spawnInterval":0.35},{"enemyId":"fast","count":25,"spawnInterval":0.15},{"enemyId":"heavy","count":15,"spawnInterval":0.6},{"enemyId":"healer","count":8,"spawnInterval":0.8}]},
+  { "wave":34,"clearBonus":330,"groups":[{"enemyId":"swarm","count":60,"spawnInterval":0.06},{"enemyId":"heavy","count":20,"spawnInterval":0.5},{"enemyId":"splitter","count":15,"spawnInterval":0.4},{"enemyId":"healer","count":10,"spawnInterval":0.6}]},
+  { "wave":35,"clearBonus":600,"groups":[{"enemyId":"boss","count":5,"spawnInterval":2.5},{"enemyId":"heavy","count":20,"spawnInterval":0.5},{"enemyId":"fast","count":30,"spawnInterval":0.12},{"enemyId":"healer","count":10,"spawnInterval":0.6},{"enemyId":"splitter","count":12,"spawnInterval":0.5}]},
+  // === 36~40: 최종 결전 ===
+  { "wave":36,"clearBonus":350,"groups":[{"enemyId":"fast","count":40,"spawnInterval":0.1},{"enemyId":"heavy","count":20,"spawnInterval":0.5},{"enemyId":"healer","count":10,"spawnInterval":0.5},{"enemyId":"splitter","count":15,"spawnInterval":0.4}]},
+  { "wave":37,"clearBonus":360,"groups":[{"enemyId":"splitter","count":25,"spawnInterval":0.3},{"enemyId":"swarm","count":50,"spawnInterval":0.06},{"enemyId":"heavy","count":20,"spawnInterval":0.5},{"enemyId":"healer","count":12,"spawnInterval":0.5}]},
+  { "wave":38,"clearBonus":380,"groups":[{"enemyId":"heavy","count":30,"spawnInterval":0.4},{"enemyId":"fast","count":35,"spawnInterval":0.1},{"enemyId":"healer","count":12,"spawnInterval":0.5},{"enemyId":"splitter","count":20,"spawnInterval":0.3},{"enemyId":"boss","count":3,"spawnInterval":3.0}]},
+  { "wave":39,"clearBonus":400,"groups":[{"enemyId":"boss","count":5,"spawnInterval":2.0},{"enemyId":"splitter","count":25,"spawnInterval":0.25},{"enemyId":"heavy","count":25,"spawnInterval":0.4},{"enemyId":"fast","count":30,"spawnInterval":0.1},{"enemyId":"healer","count":15,"spawnInterval":0.4}]},
+  { "wave":40,"clearBonus":1000,"groups":[{"enemyId":"boss","count":8,"spawnInterval":1.5},{"enemyId":"heavy","count":30,"spawnInterval":0.3},{"enemyId":"splitter","count":20,"spawnInterval":0.3},{"enemyId":"fast","count":40,"spawnInterval":0.08},{"enemyId":"healer","count":15,"spawnInterval":0.4},{"enemyId":"swarm","count":60,"spawnInterval":0.05}]}
 ];
 
 const CONFIG = {
   startGold: 200,
   startHp: 20,
   maxHp: 20,
-  totalWaves: 20
+  totalWaves: 40
 };
 
 // ===== 게임 상태 =====
@@ -1509,13 +1533,21 @@ function getDifficultyScale(waveNum) {
     { min: 1, max: 5, mult: 1.0 },
     { min: 6, max: 10, mult: 1.3 },
     { min: 11, max: 15, mult: 1.7 },
-    { min: 16, max: 20, mult: 2.2 }
+    { min: 16, max: 20, mult: 2.2 },
+    { min: 21, max: 25, mult: 2.8 },
+    { min: 26, max: 30, mult: 3.5 },
+    { min: 31, max: 35, mult: 4.5 },
+    { min: 36, max: 40, mult: 6.0 }
   ];
   const spdScales = [
     { min: 1, max: 5, mult: 1.0 },
     { min: 6, max: 10, mult: 1.1 },
     { min: 11, max: 15, mult: 1.2 },
-    { min: 16, max: 20, mult: 1.3 }
+    { min: 16, max: 20, mult: 1.3 },
+    { min: 21, max: 25, mult: 1.4 },
+    { min: 26, max: 30, mult: 1.5 },
+    { min: 31, max: 35, mult: 1.6 },
+    { min: 36, max: 40, mult: 1.7 }
   ];
   let hpMult = 1, spdMult = 1;
   for (const s of hpScales) {

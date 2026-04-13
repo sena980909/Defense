@@ -1,172 +1,45 @@
 {
   "prepareTime": 10,
   "waves": [
-    {
-      "wave": 1,
-      "clearBonus": 10,
-      "groups": [
-        { "enemyId": "normal", "count": 5, "spawnInterval": 1.0 }
-      ]
-    },
-    {
-      "wave": 2,
-      "clearBonus": 20,
-      "groups": [
-        { "enemyId": "normal", "count": 8, "spawnInterval": 0.9 }
-      ]
-    },
-    {
-      "wave": 3,
-      "clearBonus": 30,
-      "groups": [
-        { "enemyId": "normal", "count": 6, "spawnInterval": 0.8 },
-        { "enemyId": "fast", "count": 3, "spawnInterval": 0.6 }
-      ]
-    },
-    {
-      "wave": 4,
-      "clearBonus": 40,
-      "groups": [
-        { "enemyId": "normal", "count": 5, "spawnInterval": 0.8 },
-        { "enemyId": "swarm", "count": 8, "spawnInterval": 0.4 }
-      ]
-    },
-    {
-      "wave": 5,
-      "clearBonus": 50,
-      "groups": [
-        { "enemyId": "normal", "count": 8, "spawnInterval": 0.7 },
-        { "enemyId": "boss", "count": 1, "spawnInterval": 0 }
-      ]
-    },
-    {
-      "wave": 6,
-      "clearBonus": 60,
-      "groups": [
-        { "enemyId": "fast", "count": 10, "spawnInterval": 0.5 },
-        { "enemyId": "normal", "count": 5, "spawnInterval": 0.8 }
-      ]
-    },
-    {
-      "wave": 7,
-      "clearBonus": 70,
-      "groups": [
-        { "enemyId": "heavy", "count": 3, "spawnInterval": 2.0 },
-        { "enemyId": "swarm", "count": 12, "spawnInterval": 0.3 }
-      ]
-    },
-    {
-      "wave": 8,
-      "clearBonus": 80,
-      "groups": [
-        { "enemyId": "fast", "count": 8, "spawnInterval": 0.4 },
-        { "enemyId": "heavy", "count": 4, "spawnInterval": 1.8 }
-      ]
-    },
-    {
-      "wave": 9,
-      "clearBonus": 90,
-      "groups": [
-        { "enemyId": "swarm", "count": 20, "spawnInterval": 0.25 },
-        { "enemyId": "normal", "count": 8, "spawnInterval": 0.7 }
-      ]
-    },
-    {
-      "wave": 10,
-      "clearBonus": 100,
-      "groups": [
-        { "enemyId": "heavy", "count": 5, "spawnInterval": 1.5 },
-        { "enemyId": "fast", "count": 8, "spawnInterval": 0.5 },
-        { "enemyId": "boss", "count": 1, "spawnInterval": 0 }
-      ]
-    },
-    {
-      "wave": 11,
-      "clearBonus": 110,
-      "groups": [
-        { "enemyId": "normal", "count": 10, "spawnInterval": 0.5 },
-        { "enemyId": "heavy", "count": 6, "spawnInterval": 1.5 },
-        { "enemyId": "fast", "count": 6, "spawnInterval": 0.4 }
-      ]
-    },
-    {
-      "wave": 12,
-      "clearBonus": 120,
-      "groups": [
-        { "enemyId": "swarm", "count": 25, "spawnInterval": 0.2 },
-        { "enemyId": "heavy", "count": 4, "spawnInterval": 1.8 }
-      ]
-    },
-    {
-      "wave": 13,
-      "clearBonus": 130,
-      "groups": [
-        { "enemyId": "fast", "count": 15, "spawnInterval": 0.35 },
-        { "enemyId": "heavy", "count": 5, "spawnInterval": 1.5 }
-      ]
-    },
-    {
-      "wave": 14,
-      "clearBonus": 140,
-      "groups": [
-        { "enemyId": "normal", "count": 12, "spawnInterval": 0.5 },
-        { "enemyId": "swarm", "count": 20, "spawnInterval": 0.2 },
-        { "enemyId": "heavy", "count": 6, "spawnInterval": 1.2 }
-      ]
-    },
-    {
-      "wave": 15,
-      "clearBonus": 150,
-      "groups": [
-        { "enemyId": "heavy", "count": 8, "spawnInterval": 1.2 },
-        { "enemyId": "fast", "count": 10, "spawnInterval": 0.4 },
-        { "enemyId": "boss", "count": 2, "spawnInterval": 3.0 }
-      ]
-    },
-    {
-      "wave": 16,
-      "clearBonus": 160,
-      "groups": [
-        { "enemyId": "swarm", "count": 30, "spawnInterval": 0.15 },
-        { "enemyId": "fast", "count": 12, "spawnInterval": 0.35 },
-        { "enemyId": "heavy", "count": 5, "spawnInterval": 1.5 }
-      ]
-    },
-    {
-      "wave": 17,
-      "clearBonus": 170,
-      "groups": [
-        { "enemyId": "heavy", "count": 10, "spawnInterval": 1.0 },
-        { "enemyId": "fast", "count": 15, "spawnInterval": 0.3 }
-      ]
-    },
-    {
-      "wave": 18,
-      "clearBonus": 180,
-      "groups": [
-        { "enemyId": "normal", "count": 15, "spawnInterval": 0.4 },
-        { "enemyId": "swarm", "count": 25, "spawnInterval": 0.15 },
-        { "enemyId": "heavy", "count": 8, "spawnInterval": 1.0 }
-      ]
-    },
-    {
-      "wave": 19,
-      "clearBonus": 190,
-      "groups": [
-        { "enemyId": "fast", "count": 20, "spawnInterval": 0.25 },
-        { "enemyId": "heavy", "count": 10, "spawnInterval": 0.8 },
-        { "enemyId": "swarm", "count": 30, "spawnInterval": 0.12 }
-      ]
-    },
-    {
-      "wave": 20,
-      "clearBonus": 300,
-      "groups": [
-        { "enemyId": "heavy", "count": 12, "spawnInterval": 0.8 },
-        { "enemyId": "fast", "count": 15, "spawnInterval": 0.3 },
-        { "enemyId": "swarm", "count": 25, "spawnInterval": 0.15 },
-        { "enemyId": "boss", "count": 3, "spawnInterval": 4.0 }
-      ]
-    }
+    { "wave": 1, "clearBonus": 10, "groups": [{"enemyId":"normal","count":5,"spawnInterval":1.0}] },
+    { "wave": 2, "clearBonus": 20, "groups": [{"enemyId":"normal","count":8,"spawnInterval":0.9}] },
+    { "wave": 3, "clearBonus": 30, "groups": [{"enemyId":"normal","count":6,"spawnInterval":0.8},{"enemyId":"fast","count":3,"spawnInterval":0.6}] },
+    { "wave": 4, "clearBonus": 40, "groups": [{"enemyId":"normal","count":5,"spawnInterval":0.8},{"enemyId":"swarm","count":8,"spawnInterval":0.4}] },
+    { "wave": 5, "clearBonus": 50, "groups": [{"enemyId":"normal","count":8,"spawnInterval":0.7},{"enemyId":"boss","count":1,"spawnInterval":0}] },
+    { "wave": 6, "clearBonus": 60, "groups": [{"enemyId":"fast","count":10,"spawnInterval":0.5},{"enemyId":"normal","count":5,"spawnInterval":0.8}] },
+    { "wave": 7, "clearBonus": 70, "groups": [{"enemyId":"heavy","count":3,"spawnInterval":2.0},{"enemyId":"swarm","count":12,"spawnInterval":0.3},{"enemyId":"healer","count":2,"spawnInterval":2.0}] },
+    { "wave": 8, "clearBonus": 80, "groups": [{"enemyId":"fast","count":8,"spawnInterval":0.4},{"enemyId":"heavy","count":4,"spawnInterval":1.8}] },
+    { "wave": 9, "clearBonus": 90, "groups": [{"enemyId":"swarm","count":20,"spawnInterval":0.25},{"enemyId":"normal","count":8,"spawnInterval":0.7},{"enemyId":"splitter","count":3,"spawnInterval":1.5}] },
+    { "wave": 10, "clearBonus": 100, "groups": [{"enemyId":"heavy","count":5,"spawnInterval":1.5},{"enemyId":"fast","count":8,"spawnInterval":0.5},{"enemyId":"boss","count":1,"spawnInterval":0}] },
+    { "wave": 11, "clearBonus": 110, "groups": [{"enemyId":"normal","count":10,"spawnInterval":0.5},{"enemyId":"heavy","count":6,"spawnInterval":1.5},{"enemyId":"fast","count":6,"spawnInterval":0.4}] },
+    { "wave": 12, "clearBonus": 120, "groups": [{"enemyId":"swarm","count":25,"spawnInterval":0.2},{"enemyId":"heavy","count":4,"spawnInterval":1.8},{"enemyId":"healer","count":3,"spawnInterval":1.5}] },
+    { "wave": 13, "clearBonus": 130, "groups": [{"enemyId":"fast","count":15,"spawnInterval":0.35},{"enemyId":"splitter","count":5,"spawnInterval":1.2},{"enemyId":"heavy","count":5,"spawnInterval":1.5}] },
+    { "wave": 14, "clearBonus": 140, "groups": [{"enemyId":"normal","count":12,"spawnInterval":0.5},{"enemyId":"swarm","count":20,"spawnInterval":0.2},{"enemyId":"healer","count":4,"spawnInterval":1.2},{"enemyId":"heavy","count":6,"spawnInterval":1.2}] },
+    { "wave": 15, "clearBonus": 150, "groups": [{"enemyId":"heavy","count":8,"spawnInterval":1.2},{"enemyId":"splitter","count":6,"spawnInterval":1.0},{"enemyId":"fast","count":10,"spawnInterval":0.4},{"enemyId":"boss","count":2,"spawnInterval":3.0}] },
+    { "wave": 16, "clearBonus": 160, "groups": [{"enemyId":"swarm","count":30,"spawnInterval":0.15},{"enemyId":"fast","count":12,"spawnInterval":0.35},{"enemyId":"heavy","count":5,"spawnInterval":1.5}] },
+    { "wave": 17, "clearBonus": 170, "groups": [{"enemyId":"heavy","count":10,"spawnInterval":1.0},{"enemyId":"fast","count":15,"spawnInterval":0.3},{"enemyId":"splitter","count":8,"spawnInterval":0.8}] },
+    { "wave": 18, "clearBonus": 180, "groups": [{"enemyId":"normal","count":15,"spawnInterval":0.4},{"enemyId":"swarm","count":25,"spawnInterval":0.15},{"enemyId":"healer","count":5,"spawnInterval":1.0},{"enemyId":"heavy","count":8,"spawnInterval":1.0}] },
+    { "wave": 19, "clearBonus": 190, "groups": [{"enemyId":"fast","count":20,"spawnInterval":0.25},{"enemyId":"splitter","count":10,"spawnInterval":0.6},{"enemyId":"heavy","count":10,"spawnInterval":0.8},{"enemyId":"healer","count":4,"spawnInterval":1.5}] },
+    { "wave": 20, "clearBonus": 300, "groups": [{"enemyId":"heavy","count":12,"spawnInterval":0.8},{"enemyId":"splitter","count":8,"spawnInterval":0.7},{"enemyId":"fast","count":15,"spawnInterval":0.3},{"enemyId":"healer","count":5,"spawnInterval":1.2},{"enemyId":"swarm","count":25,"spawnInterval":0.15},{"enemyId":"boss","count":3,"spawnInterval":4.0}] },
+    { "wave": 21, "clearBonus": 200, "groups": [{"enemyId":"fast","count":25,"spawnInterval":0.2},{"enemyId":"healer","count":4,"spawnInterval":1.5},{"enemyId":"splitter","count":6,"spawnInterval":1.0}] },
+    { "wave": 22, "clearBonus": 210, "groups": [{"enemyId":"heavy","count":15,"spawnInterval":0.8},{"enemyId":"swarm","count":30,"spawnInterval":0.12},{"enemyId":"healer","count":5,"spawnInterval":1.2}] },
+    { "wave": 23, "clearBonus": 220, "groups": [{"enemyId":"splitter","count":12,"spawnInterval":0.6},{"enemyId":"fast","count":20,"spawnInterval":0.25},{"enemyId":"heavy","count":8,"spawnInterval":1.0}] },
+    { "wave": 24, "clearBonus": 230, "groups": [{"enemyId":"normal","count":20,"spawnInterval":0.3},{"enemyId":"heavy","count":12,"spawnInterval":0.8},{"enemyId":"healer","count":6,"spawnInterval":1.0},{"enemyId":"splitter","count":8,"spawnInterval":0.7}] },
+    { "wave": 25, "clearBonus": 350, "groups": [{"enemyId":"boss","count":3,"spawnInterval":3.0},{"enemyId":"heavy","count":15,"spawnInterval":0.7},{"enemyId":"healer","count":6,"spawnInterval":1.0},{"enemyId":"fast","count":20,"spawnInterval":0.2}] },
+    { "wave": 26, "clearBonus": 250, "groups": [{"enemyId":"swarm","count":50,"spawnInterval":0.1},{"enemyId":"fast","count":15,"spawnInterval":0.3},{"enemyId":"splitter","count":10,"spawnInterval":0.5}] },
+    { "wave": 27, "clearBonus": 260, "groups": [{"enemyId":"heavy","count":18,"spawnInterval":0.7},{"enemyId":"healer","count":8,"spawnInterval":0.8},{"enemyId":"fast","count":20,"spawnInterval":0.2}] },
+    { "wave": 28, "clearBonus": 270, "groups": [{"enemyId":"splitter","count":15,"spawnInterval":0.5},{"enemyId":"swarm","count":35,"spawnInterval":0.1},{"enemyId":"heavy","count":10,"spawnInterval":0.8},{"enemyId":"healer","count":6,"spawnInterval":1.0}] },
+    { "wave": 29, "clearBonus": 280, "groups": [{"enemyId":"fast","count":30,"spawnInterval":0.15},{"enemyId":"heavy","count":15,"spawnInterval":0.6},{"enemyId":"splitter","count":12,"spawnInterval":0.5},{"enemyId":"healer","count":8,"spawnInterval":0.8}] },
+    { "wave": 30, "clearBonus": 500, "groups": [{"enemyId":"boss","count":5,"spawnInterval":3.0},{"enemyId":"heavy","count":20,"spawnInterval":0.5},{"enemyId":"healer","count":8,"spawnInterval":0.8},{"enemyId":"splitter","count":10,"spawnInterval":0.6},{"enemyId":"swarm","count":30,"spawnInterval":0.1}] },
+    { "wave": 31, "clearBonus": 300, "groups": [{"enemyId":"fast","count":35,"spawnInterval":0.12},{"enemyId":"splitter","count":15,"spawnInterval":0.4},{"enemyId":"healer","count":6,"spawnInterval":1.0}] },
+    { "wave": 32, "clearBonus": 310, "groups": [{"enemyId":"heavy","count":25,"spawnInterval":0.5},{"enemyId":"healer","count":10,"spawnInterval":0.6},{"enemyId":"swarm","count":40,"spawnInterval":0.08}] },
+    { "wave": 33, "clearBonus": 320, "groups": [{"enemyId":"splitter","count":20,"spawnInterval":0.35},{"enemyId":"fast","count":25,"spawnInterval":0.15},{"enemyId":"heavy","count":15,"spawnInterval":0.6},{"enemyId":"healer","count":8,"spawnInterval":0.8}] },
+    { "wave": 34, "clearBonus": 330, "groups": [{"enemyId":"swarm","count":60,"spawnInterval":0.06},{"enemyId":"heavy","count":20,"spawnInterval":0.5},{"enemyId":"splitter","count":15,"spawnInterval":0.4},{"enemyId":"healer","count":10,"spawnInterval":0.6}] },
+    { "wave": 35, "clearBonus": 600, "groups": [{"enemyId":"boss","count":5,"spawnInterval":2.5},{"enemyId":"heavy","count":20,"spawnInterval":0.5},{"enemyId":"fast","count":30,"spawnInterval":0.12},{"enemyId":"healer","count":10,"spawnInterval":0.6},{"enemyId":"splitter","count":12,"spawnInterval":0.5}] },
+    { "wave": 36, "clearBonus": 350, "groups": [{"enemyId":"fast","count":40,"spawnInterval":0.1},{"enemyId":"heavy","count":20,"spawnInterval":0.5},{"enemyId":"healer","count":10,"spawnInterval":0.5},{"enemyId":"splitter","count":15,"spawnInterval":0.4}] },
+    { "wave": 37, "clearBonus": 360, "groups": [{"enemyId":"splitter","count":25,"spawnInterval":0.3},{"enemyId":"swarm","count":50,"spawnInterval":0.06},{"enemyId":"heavy","count":20,"spawnInterval":0.5},{"enemyId":"healer","count":12,"spawnInterval":0.5}] },
+    { "wave": 38, "clearBonus": 380, "groups": [{"enemyId":"heavy","count":30,"spawnInterval":0.4},{"enemyId":"fast","count":35,"spawnInterval":0.1},{"enemyId":"healer","count":12,"spawnInterval":0.5},{"enemyId":"splitter","count":20,"spawnInterval":0.3},{"enemyId":"boss","count":3,"spawnInterval":3.0}] },
+    { "wave": 39, "clearBonus": 400, "groups": [{"enemyId":"boss","count":5,"spawnInterval":2.0},{"enemyId":"splitter","count":25,"spawnInterval":0.25},{"enemyId":"heavy","count":25,"spawnInterval":0.4},{"enemyId":"fast","count":30,"spawnInterval":0.1},{"enemyId":"healer","count":15,"spawnInterval":0.4}] },
+    { "wave": 40, "clearBonus": 1000, "groups": [{"enemyId":"boss","count":8,"spawnInterval":1.5},{"enemyId":"heavy","count":30,"spawnInterval":0.3},{"enemyId":"splitter","count":20,"spawnInterval":0.3},{"enemyId":"fast","count":40,"spawnInterval":0.08},{"enemyId":"healer","count":15,"spawnInterval":0.4},{"enemyId":"swarm","count":60,"spawnInterval":0.05}] }
   ]
 }
