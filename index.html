@@ -1860,9 +1860,11 @@ function updateSpawner(dt) {
   if (sp.spawnedInGroup >= group.count) {
     sp.groupIndex++;
     sp.spawnedInGroup = 0;
-    // 다음 그룹이 있으면 바로 첫 번째 적 스폰
+    // 다음 그룹이 있으면 타이머 설정, 없으면 즉시 스폰 완료
     if (sp.groupIndex < waveData.groups.length) {
       sp.spawnTimer = waveData.groups[sp.groupIndex].spawnInterval;
+    } else {
+      sp.active = false;
     }
   } else {
     sp.spawnTimer = group.spawnInterval;
@@ -1903,6 +1905,9 @@ function startWave() {
 // ===== 웨이브 클리어 체크 =====
 function checkWaveClear() {
   if (gameState.phase !== 'wave') return;
+
+  // 안전장치: 죽은 적이 배열에 남아있으면 제거
+  gameState.enemies = gameState.enemies.filter(e => e.alive);
 
   // 스포너가 끝나고, 살아있는 적이 0이면 클리어
   if (!gameState.spawner.active && gameState.enemies.length === 0) {
